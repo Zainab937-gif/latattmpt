@@ -1,9 +1,9 @@
 title: "./my-blog"
 description: "Mere thoughts, code, aur kuch aur"
-author: "Aapka Naam"
+author: "Zainab Aamir"
 email: "aap@example.com"
-url: "https://AAPKA-USERNAME.github.io"
-baseurl: ""
+url: "https://github.com/Zainab937/laattmpt.github.io"
+baseurl: "/laatmpt"
 
 twitter_username: aapka_twitter
 github_username: aapka_github
