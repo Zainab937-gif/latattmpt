@@ -1,0 +1,58 @@
+title: "Your Name"
+tagline: "Writer · Thinker · Explorer"
+description: "Personal blog sharing thoughts, experiences, and stories worth telling."
+url: "https://yourusername.github.io"
+baseurl: ""
+
+author:
+  name: "Your Name"
+  email: "your@email.com"
+  bio: "A curious mind writing about life, tech, and everything in between."
+  location: "Karachi, Pakistan"
+  twitter: "yourhandle"
+  github: "yourusername"
+  linkedin: "yourhandle"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Pagination
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+      comments: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
