@@ -7,7 +7,6 @@ excerpt: "GitHub Pages pe free mein blog kaise host karein — step by step guid
 ---
 
 Bhai, sach batao — blog banana utna mushkil nahi jitna lagta.
-
 ## Kya chahiye?
 
 - GitHub account (free)
