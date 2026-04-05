@@ -2,11 +2,8 @@ title: "./my-blog"
 description: "Mere thoughts, code, aur kuch aur"
 author: "Zainab Aamir"
 email: "aap@example.com"
-url: "https://github.com/Zainab937/laattmpt.github.io"
+url: "https://zainab937-gif.github.io/latattmpt/"
 baseurl: "/laatmpt"
-
-twitter_username: aapka_twitter
-github_username: aapka_github
 
 plugins:
   - jekyll-feed
