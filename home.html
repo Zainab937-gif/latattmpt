@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="hero-featured">
+  {% assign featured = site.posts | first %}
+  {% if featured %}
+  <div class="hero-tag">★ LATEST POST</div>
+  <h1 class="hero-title"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h1>
+  <p class="hero-excerpt">{{ featured.excerpt | strip_html | truncate: 150 }}</p>
+  <div class="hero-meta">
+    <span>{{ featured.date | date: "%b %d, %Y" }}</span>
+    &nbsp;·&nbsp;
+    {% assign words = featured.content | number_of_words %}
+    {{ words | divided_by: 200 | plus: 1 }} min read
+    {% if featured.tags.size > 0 %}&nbsp;·&nbsp;{{ featured.tags | join: ", " }}{% endif %}
+  </div>
+  <a class="read-btn" href="{{ featured.url | relative_url }}">read post →</a>
+  {% endif %}
+</div>
+
+<div class="posts-section">
+  <div class="section-label">all posts</div>
+  {% for post in site.posts offset: 1 %}
+  <article class="post-item">
+    <div class="post-main">
+      {% if post.tags.size > 0 %}<div class="post-tag">{{ post.tags | first | upcase }}</div>{% endif %}
+      <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+    </div>
+    <div class="post-date">{{ post.date | date: "%b %d" }}</div>
+  </article>
+  {% endfor %}
+</div>

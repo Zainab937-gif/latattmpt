@@ -1,0 +1,27 @@
+title: "./my-blog"
+description: "Mere thoughts, code, aur kuch aur"
+author: "Aapka Naam"
+email: "aap@example.com"
+url: "https://AAPKA-USERNAME.github.io"
+baseurl: ""
+
+twitter_username: aapka_twitter
+github_username: aapka_github
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

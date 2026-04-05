@@ -1,0 +1,18 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+<div class="post-full">
+  <h1 class="page-title">About</h1>
+  <div class="post-body">
+    <p>Assalamu Alaikum! Main hoon <strong>{{ site.author }}</strong>.</p>
+    <p>Ye blog mere liye ek jagah hai apne khayal share karne ki — code ke baare mein, seekhne ke baare mein, aur zindagi ke baare mein.</p>
+    <p>Agar aap mujhse milna chahte ho:</p>
+    <ul>
+      {% if site.github_username %}<li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>{% endif %}
+      {% if site.twitter_username %}<li><a href="https://twitter.com/{{ site.twitter_username }}">Twitter/X</a></li>{% endif %}
+      {% if site.email %}<li><a href="mailto:{{ site.email }}">Email</a></li>{% endif %}
+    </ul>
+  </div>
+</div>
